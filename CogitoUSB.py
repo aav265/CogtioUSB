@@ -3,7 +3,6 @@ import keyboard
 import time
 import pandas as pd
 import joblib
-import sys
 import re
 
 #calculates words per minute typed
@@ -128,7 +127,7 @@ def hid_blocker(hid_block):
 def quit_program(log_file, blocked_devices):
     log_file.write(f"\n{blocked_devices}\n")
     log_file.close()
-    sys.exit(0)
+    quit()
 
 def main():
     print("***************************************")
